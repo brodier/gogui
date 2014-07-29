@@ -1,0 +1,12 @@
+#!/bin/bash
+
+##############################################################
+# lanceur de gogui
+##############################################################
+
+LOGGING="-Djava.util.logging.config.file=config/logging.properties"
+#JMX="-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=1999 -Dcom.sun.management.jmxremote.authenticate=false "
+JAR=`ls gogui*.jar`
+
+java $VERBOSE $LOGGING $JMX -jar $JAR $*
+
