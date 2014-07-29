@@ -217,7 +217,7 @@ public final class AboutDialog
     private URL getImage(String name)
     {
         ClassLoader loader = getClass().getClassLoader();
-        return loader.getResource("net/sf/gogui/images/" + name);
+        return loader.getResource("images/" + name);
     }
 
     private String getMemorySizeString(long size)

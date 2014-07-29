@@ -26,7 +26,7 @@ public class BoardPainter
     public BoardPainter()
     {
         ClassLoader classLoader = getClass().getClassLoader();
-        URL url = classLoader.getResource("net/sf/gogui/images/wood.png");
+        URL url = classLoader.getResource("images/wood.png");
         if (url == null)
             m_image = null;
         else

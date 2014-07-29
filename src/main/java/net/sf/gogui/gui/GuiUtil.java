@@ -181,7 +181,7 @@ public class GuiUtil
 
     public static ImageIcon getIcon(String icon, String name)
     {
-        String resource = "net/sf/gogui/images/" + icon + ".png";
+        String resource = "images/" + icon + ".png";
         URL url = GuiUtil.class.getClassLoader().getResource(resource);
         return new ImageIcon(url, name);
     }
@@ -503,7 +503,7 @@ public class GuiUtil
         // Sun Java 1.5.0). Best solution for now is to take an icon without
         // transparency
         s_iconURL =
-            loader.getResource("net/sf/gogui/images/gogui-48x48-notrans.png");
+            loader.getResource("images/gogui-48x48-notrans.png");
     }
 
     private static class ProgressThread

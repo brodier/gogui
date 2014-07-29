@@ -14,7 +14,7 @@ final class I18n
     }
 
     private static ResourceBundle s_bundle =
-        ResourceBundle.getBundle("net.sf.gogui.gogui.text",
+        ResourceBundle.getBundle("gogui.text",
                                  Locale.getDefault());
 
     /** Make constructor unavailable; class is for namespace only. */
