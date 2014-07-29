@@ -21,7 +21,7 @@ public final class ThumbnailReaderTest
     public void testRead() throws IOException
     {
         ThumbnailReader.MetaData metaData =
-            getMetaData("gnome-thumbnail.png");
+            getMetaData("./src/test/resources/gnome-thumbnail.png");
         assertEquals("file:///compsci/brule9/cshome/emarkus/gogui/sgf"
                      + "/openings/9x9/007.sgf",
                      metaData.m_uri.toString());
@@ -34,7 +34,7 @@ public final class ThumbnailReaderTest
     private ThumbnailReader.MetaData getMetaData(String fileName)
         throws IOException
     {
-        File file = new File(getClass().getResource(fileName).getPath());
+        File file = new File(fileName);
         return ThumbnailReader.read(file);
     }
 }

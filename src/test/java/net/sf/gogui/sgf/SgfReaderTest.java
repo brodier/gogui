@@ -304,7 +304,8 @@ public final class SgfReaderTest
 
     private SgfReader getReader(String name) throws SgfError, Exception
     {
-        InputStream in = getClass().getResourceAsStream(name);
+        //InputStream in = getClass().getResourceAsStream(name);
+        InputStream in = new FileInputStream("./src/test/resources/"+name);
         if (in == null)
             throw new Exception("Resource " + name + " not found");
         return new SgfReader(in, null, null, 0);
